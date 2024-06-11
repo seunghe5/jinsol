@@ -1,0 +1,455 @@
+/* 스타일시트 파일: style.css */
+
+/* 전역 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 헤더 스타일 */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header .main-nav ul li a,
+header .auth-nav ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+/* 서브 네비게이션 스타일 */
+header .auth-nav ul li a {
+    font-size: 14px;
+}
+
+/* 추천 상품 섹션 스타일 */
+.recommended-products {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.recommended-products img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+    min-width: 33.3333%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+.slider-button:disabled {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+}
+
+
+/* 제품 목록 스타일 */
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* 이미지가 잘리지 않고 비율이 유지되도록 함 */
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.product-item button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: #555;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* 이미지를 왜곡 없이 크기에 맞춤 */
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 장바구니 테이블 스타일 */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #f8f8f8;
+}
+
+.cart-table td.total-price {
+    min-width: 120px; /* 최소 너비 설정 */
+    max-width: 200px; /* 최대 너비 설정 */
+    width: 15%; /* 기본 너비 설정 */
+}
+
+.cart-summary {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.cart-summary p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cart-summary button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-summary button:hover {
+    background-color: #555;
+}
+
+/* 제품 상세 페이지 스타일 */
+.product-detail-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.product-image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: 300px;
+    object-fit:cover;
+}
+
+.product-image hr {
+    margin: 20px 0;
+}
+
+.product-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.product-description {
+    margin-top: 20px;
+}
+
+.product-price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.product-cart button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.product-cart button:hover {
+    background-color: #555;
+}
+
+/* 로그인 및 회원가입 페이지 스타일 */
+.login, .signup {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.login h2, .signup h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login form, .signup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    object-fit: cover; /* 승희님 제가 이미지 규격 맞춰달랬죠. */
+}
+
+.login form input, .signup form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login form button, .signup form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login form button:hover, .signup form button:hover {
+    background-color: #555;
+}
+
+.login p, .signup p {
+    text-align: center;
+}
+
+/* Footer 스타일 */
+footer {
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    transition: bottom 0.3s ease;
+}
+
+/* Footer를 보이게 하는 클래스 */
+footer.visible {
+    bottom: 0;
+}
+/* Checkout 페이지 스타일 */
+.checkout-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.checkout-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.checkout-form {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.checkout-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-icon {
+    display: flex;
+    align-items: center;
+}
+
+.input-icon img {
+    margin-right: 10px;
+    height: 35px;
+    width: 35px;
+}
+
+.input-icon input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 1500px; /* 입력 필드의 길이를 통일 */
+    box-sizing: border-box;
+    max-width: 400px; /* 최대 길이 설정 */
+}
+
+.checkout-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-summary {
+    flex: 0 0 200px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.total-amount h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.total-amount p {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0 20px 0;
+}
+
+button#pay-button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: not-allowed;
+}
+
+button#pay-button.enabled {
+    background-color: #333;
+    cursor: pointer;
+}

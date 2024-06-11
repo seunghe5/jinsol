@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><h1>쇼핑몰 로고</h1></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">메인페이지</a></li>
+                    
+                    <li><a href="products.html">전체 제품</a></li>
+                   
+                    <li><a href="cart.html">장바구니</a></li>
+                    
+                </ul>
+            </nav>
+            <nav class="auth-nav" id="auth-nav">
+                <ul>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="signup.html">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="cart">
+            <h2>장바구니</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>상품명</th>
+                        <th>가격</th>
+                        <th>수량</th>
+                        <th>합계</th>
+                        <th>삭제</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- 장바구니 항목들이 동적으로 추가됩니다. -->
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <p>총 상품 금액: <span id="total-price">0원</span></p>
+                <button onclick="location.href='checkout.html'">결제하기</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 쇼핑몰. All rights reserved.</p>
+        <p>업체명: -------- | 전화번호: --- --- --- | 주소: ------ -------- ------</p>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="auth.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

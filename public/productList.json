@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "명함 꽂이",
+        "price": 17000,
+        "image": "source/miniCar.png",
+        "description": "자동차 모형의 명함 꽂이 입니다."
+    },
+    {
+        "id": 2,
+        "name": "책상 오브제",
+        "price": 23000,
+        "image": "source/miniChair.png",
+        "description": "다용도로 활용 가능한 책상 오브제입니다."
+    },
+    {
+        "id": 3,
+        "name": "동물 오브제",
+        "price": 12900,
+        "image": "source/animals.png",
+        "description": "십이지신을 모티브로한 동물 오브제입니다. 철판을 레이저로 가공하여 제작합니다."
+    },
+    {
+        "id": 4,
+        "name": "스틸트롤리",
+        "price": 380000,
+        "image": "source/steelTrolley.png",
+        "description": "바퀴가 달려있는 이동식 트롤리입니다. 사무실, 가정 등 다양한 분야에서 활용 가능합니다."
+    },
+    {
+        "id": 5,
+        "name": "금속 책갈피",
+        "price": 17000,
+        "image": "source/metalBookmark.png",
+        "description": "다양한 디자인의 금속 책갈피 입니다."
+    },
+    {
+        "id": 6,
+        "name": "로봇",
+        "price": 50000,
+        "image": "source/robot.png",
+        "description": "금속 컷팅으로 만든 탁상용 로봇 모형 오브제 입니다. 관절 움직임은 불가합니다."
+    },
+    {
+        "id": 7,
+        "name": "북앤드",
+        "price": 22000,
+        "image": "source/bookend.png",
+        "description": "책장, 책상에 두어 책 쓰러짐을 방지해주는 북앤드입니다."
+    },
+    {
+        "id": 8,
+        "name": "다용도 받침대",
+        "price": 43000,
+        "image": "source/multipurposeStand.png",
+        "description": "키보드, 테블릿 PC를 올려두어 사용가능한 다용도 받침대 입니다. 각도, 높이 조절이 가능합니다."
+    },
+    {
+        "id": 9,
+        "name": "인센스 홀더",
+        "price": 53000,
+        "image": "source/insenseHolder.png",
+        "description": "스텐으로 제작된 인센스 홀더 입니다. 차키,열쇠 보관대로 사용 가능합니다."
+    }
+]

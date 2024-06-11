@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제품 상세 정보</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html"><h1>쇼핑몰 로고</h1></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">메인페이지</a></li>
+                    
+                    <li><a href="products.html">전체 제품</a></li>
+                   
+                    <li><a href="cart.html">장바구니</a></li>
+                </ul>
+            </nav>
+            <nav class="auth-nav" id="auth-nav">
+                <ul>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="signup.html">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="product-detail">
+            <div class="product-detail-container">
+                <div class="product-image">
+                    <img id="product-image" src="source/default.jpg" alt="제품 이미지">
+                    <hr>
+                    <h3>Details</h3>
+                    <p id="product-description">제품 설명</p>
+                </div>
+                <div class="product-info">
+                    <div class="product-price">
+                        <p id="product-price">Price: 0원</p>
+                    </div>
+                    <div class="product-cart">
+                        <button id="add-to-cart">장바구니에 넣기</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 쇼핑몰. All rights reserved.</p>
+        <p>업체명: -------- | 전화번호: --- --- --- | 주소: ------ -------- ------</p>
+    </footer>
+
+    <script src="productDetail.js"></script>
+    <script src="auth.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

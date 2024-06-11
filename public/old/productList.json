@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "스마트폰",
+        "price": 199000,
+        "image": "source/1.png",
+        "description": "최신 스마트폰 모델입니다."
+    },
+    {
+        "id": 2,
+        "name": "노트북",
+        "price": 899000,
+        "image": "source/2.png",
+        "description": "고성능 노트북입니다."
+    },
+    {
+        "id": 3,
+        "name": "무선 이어폰",
+        "price": 129000,
+        "image": "source/3.png",
+        "description": "고음질 무선 이어폰입니다."
+    },
+    {
+        "id": 4,
+        "name": "소파",
+        "price": 499000,
+        "image": "source/4.png",
+        "description": "편안한 소파입니다."
+    },
+    {
+        "id": 5,
+        "name": "책상",
+        "price": 299000,
+        "image": "source/5.png",
+        "description": "넓고 튼튼한 책상입니다."
+    },
+    {
+        "id": 6,
+        "name": "침대",
+        "price": 799000,
+        "image": "source/6.png",
+        "description": "편안한 침대입니다."
+    },
+    {
+        "id": 7,
+        "name": "청소기",
+        "price": 199000,
+        "image": "source/7.png",
+        "description": "강력한 흡입력의 청소기입니다."
+    },
+    {
+        "id": 8,
+        "name": "냄비 세트",
+        "price": 99000,
+        "image": "source/8.png",
+        "description": "고급 스테인리스 냄비 세트입니다."
+    },
+    {
+        "id": 9,
+        "name": "세탁기",
+        "price": 699000,
+        "image": "source/9.png",
+        "description": "대용량 세탁기입니다."
+    }
+]
