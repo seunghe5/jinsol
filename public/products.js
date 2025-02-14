@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function loadProducts() {
-    fetch('productList.json')
+    fetch('public/productList.json')
         .then(response => response.json())
         .then(products => {
             displayProducts(products);
