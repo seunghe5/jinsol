@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initializeSlider() {
     console.log('Initializing slider...');
-    fetch('productList.json')
+    fetch('public/productList.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
