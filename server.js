@@ -7,6 +7,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
+//기본 경로 설정
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 // 회원가입 처리
 app.post('/signup', (req, res) => {
     const newUser = req.body;
