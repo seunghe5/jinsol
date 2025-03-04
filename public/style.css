@@ -453,3 +453,22 @@ button#pay-button.enabled {
     background-color: #333;
     cursor: pointer;
 }
+
+/* 회사 소개 섹션 스타일 */
+#about-us {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#about-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
