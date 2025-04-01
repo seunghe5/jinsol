@@ -343,6 +343,24 @@ footer {
 .login p, .signup p {
     text-align: center;
 }
+/* 배경이미지와 텍스트 */
+.background-container {
+    background-image: url('배경이미지URL'); /* 배경 이미지 경로 */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white; /* 텍스트 색상 */
+    padding: 100px 20px; /* 섹션 안 여백 */
+}
+
+.background-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.background-container p {
+    font-size: 1.2em;
+}
 
 /* Footer 스타일 */
 footer {
