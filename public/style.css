@@ -345,7 +345,7 @@ footer {
 }
 /* 배경이미지와 텍스트 */
 .background-container {
-    background-image: url('배경이미지URL'); /* 배경 이미지 경로 */
+    background-image: url('souce/aluminium.png'); /* 배경 이미지 경로 */
     background-size: cover;
     background-position: center;
     text-align: center;
